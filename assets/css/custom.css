@@ -101,17 +101,6 @@ a {
     margin-right: 10px;
     padding: 10px 5px 10px 15px;
   }
-  .header .logo {
-    order: 1;
-  }
-  .header .btn-getstarted {
-    order: 2;
-    margin: 0 10px 0 0;
-    padding: 6px 15px;
-  }
-  .header .navmenu {
-    order: 3;
-  }
 } 
 /*--------------------------------------------------------------
 # Navigation Menu
