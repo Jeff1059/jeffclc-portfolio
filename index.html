@@ -11,47 +11,52 @@
 </head>
 <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
 <header id="header" class="header d-flex align-items-center fixed-top position-logo" data-builder="header" data-js=" scrolled scroll-up-sticky">
-  
   <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+    <!-- Logo au top -->
     <a href="index.html" class="logo logo-top">
       <img src="assets/images/Logo_jg.png" alt="">
     </a>
-    <a href="index.html" class="logo logo logo-scrolled">
+
+    <!-- Logo quand on n’est plus tout en haut -->
+    <a href="index.html" class="logo logo-scrolled">
       <img src="assets/images/Logo_jg_lite.png" alt="">
     </a>
-  <div class="header-container">
-    <nav id="navmenu" class="navmenu" data-builder="navmenu" data-js=" mobile-nav-toggle mobile-nav-dropdown">
-  <ul>
-    <li><a href="#hero" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#team">Team</a></li>
-    <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-      <ul>
-        <li><a href="#">Dropdown 1</a></li>
-        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Deep Dropdown 1</a></li>
-            <li><a href="#">Deep Dropdown 2</a></li>
-            <li><a href="#">Deep Dropdown 3</a></li>
-            <li><a href="#">Deep Dropdown 4</a></li>
-            <li><a href="#">Deep Dropdown 5</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Dropdown 2</a></li>
-        <li><a href="#">Dropdown 3</a></li>
-        <li><a href="#">Dropdown 4</a></li>
-      </ul>
-    </li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-  </div>
-  
+
+    <div class="header-container">
+      <nav id="navmenu" class="navmenu" data-builder="navmenu" data-js=" mobile-nav-toggle mobile-nav-dropdown">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+
   </div>
 </header>
+
   <section id="hero" class="hero section">
 
       <div class="container">
@@ -97,20 +102,29 @@
   <script src="assets/js/main.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".position-logo");
+    const header = document.querySelector("#header");
     const seuil = 20; // en px
+
+    // Sécurité : si pas de header, on ne fait rien
+    if (!header) {
+      console.warn("Aucun #header trouvé dans le DOM");
+      return;
+    }
 
     function checkScroll() {
       if (window.scrollY > seuil) {
-        navbar.classList.add("navbar-not-top");
+        header.classList.add("header-not-top");
       } else {
-        navbar.classList.remove("navbar-not-top");
+        header.classList.remove("header-not-top");
       }
     }
 
+    // Écoute du scroll + vérification au chargement
     window.addEventListener("scroll", checkScroll);
-    window.addEventListener("load", checkScroll);   // au chargement
+    window.addEventListener("load", checkScroll);
+    checkScroll();
   });
 </script>
+
 </body>
 </html>
