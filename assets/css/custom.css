@@ -82,18 +82,18 @@ a {
 }
 
 
-.logo-top {
+.header .logo-top {
   display: inline-block;
 }
-.logo-scrolled {
+.header .logo-scrolled {
   display: none;
 }
 
-.header-not-top .logo-top {
+.header .header-not-top .logo-top {
   display: none;
 }
 
-.header-not-top .logo-scrolled {
+.header .header-not-top .logo-scrolled {
   display: inline-block;
 }
 
