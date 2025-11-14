@@ -76,17 +76,10 @@ a {
   line-height: 1;
 }
 .header .logo img {
-  max-height: 36px;
+  max-height: 75px;
   margin-right: 8px;
 }
-.header .logo h1 {
-  font-size: 20px;
-  margin: 0;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--heading-color);
-}
+
 .header .btn-getstarted, .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
