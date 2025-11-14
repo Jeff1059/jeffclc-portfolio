@@ -81,15 +81,18 @@ a {
   margin-right: 8px;
 }
 
-.logo-lite {
+
+.logo-top {
+  display: inline-block;
+}
+.logo-scrolled {
   display: none;
 }
 
-.navbar-scrolled .logo-default {
+.navbar-custom.navbar-not-top .logo-top {
   display: none;
 }
-
-.navbar-scrolled .logo-lite {
+.navbar-custom.navbar-not-top .logo-scrolled {
   display: inline-block;
 }
 
