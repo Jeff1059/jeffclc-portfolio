@@ -73,11 +73,26 @@ a {
 }
 .header .logo {
   line-height: 1;
+  transition: opacity 0.3s ease;
+  
 }
 .header .logo img {
   max-height: 115px;
   margin-right: 8px;
 }
+
+.logo-lite {
+  display: none;
+}
+
+.navbar-scrolled .logo-default {
+  display: none;
+}
+
+.navbar-scrolled .logo-lite {
+  display: inline-block;
+}
+
 
 .header .btn-getstarted, .header .btn-getstarted:focus {
   color: var(--contrast-color);
