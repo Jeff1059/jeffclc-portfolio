@@ -89,12 +89,14 @@ a {
   display: none;
 }
 
-.navbar-custom.navbar-not-top .logo-top {
+.header-not-top .logo-top {
   display: none;
 }
-.navbar-custom.navbar-not-top .logo-scrolled {
+
+.header-not-top .logo-scrolled {
   display: inline-block;
 }
+
 
 
 .header .btn-getstarted, .header .btn-getstarted:focus {
