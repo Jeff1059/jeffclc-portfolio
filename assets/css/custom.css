@@ -88,10 +88,12 @@ a {
   border-radius: 50px;
   transition: 0.3s;
 }
+
 .header .btn-getstarted:hover, .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+
 @media (max-width: 1200px) {
   .header {
     padding-top: 10px;
@@ -100,6 +102,9 @@ a {
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px 5px 10px 15px;
+  }
+  .header .logo img {
+  max-height: 100px;
   }
 } 
 /*--------------------------------------------------------------
