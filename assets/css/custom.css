@@ -82,7 +82,7 @@ a {
 }
 
 
- #header .logo-top {
+ #header .header-not-top .logo-top {
   display: inline-block;
 }
 #header .header-not-top .logo-scrolled {
