@@ -85,6 +85,10 @@ a {
   display: inline-block;
 }
 
+#header .logo-scrolled {
+  display: none;
+}
+
 #header .header-not-top .logo-top {
   display: none;
 }
