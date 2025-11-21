@@ -113,6 +113,10 @@ a {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+.background-home{
+  background-image: url(/assets/images/cover-header-jgconcept.png);
+}
+
 @media (max-width: 1200px) {
   .header {
     padding-top: 10px;
