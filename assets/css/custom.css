@@ -82,14 +82,18 @@ a {
 }
 
 
-.header .header-not-top .logo-top {
+.header .logo-top {
   display: inline-block;
 }
-.header .header-not-top .logo-scrolled {
+.header .logo-scrolled  {
   display: none;
 }
-
-
+.header .header-not-top .logo-scrolled {
+  display: inline-block;
+}
+.header .header-not-top .logo-top {
+  display: none;
+}
 
 #header .btn-getstarted, .header .btn-getstarted:focus {
   color: var(--contrast-color);
