@@ -81,19 +81,18 @@ a {
   margin-right: 8px;
 }
 
+#header .logo-top {
+  display: inline-block;
+}
 
-#logo .logo-top {
-  display: inline-block;
-}
-#logo .logo-scrolled  {
+#header .header-not-top .logo-top {
   display: none;
 }
-#logo .header-not-top .logo-scrolled {
+
+#header .header-not-top .logo-scrolled {
   display: inline-block;
 }
-#logo .header-not-top .logo-top {
-  display: none;
-}
+
 
 #header .btn-getstarted, .header .btn-getstarted:focus {
   color: var(--contrast-color);
