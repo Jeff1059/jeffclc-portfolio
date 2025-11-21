@@ -114,7 +114,7 @@ a {
 }
 
 .background-home{
-  background-image: url(/assets/images/cover-header-jgconcept.png);
+  background-image: url(assets/images/cover-header-jgconcept.png);
 }
 
 @media (max-width: 1200px) {
