@@ -82,10 +82,10 @@ a {
 }
 
 
- #header .header-not-top .logo-top {
+.header .header-not-top .logo-top {
   display: inline-block;
 }
-#header .header-not-top .logo-scrolled {
+.header .header-not-top .logo-scrolled {
   display: none;
 }
 
