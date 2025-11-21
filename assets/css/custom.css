@@ -82,16 +82,16 @@ a {
 }
 
 
-#header .logo-top {
+#logo .logo-top {
   display: inline-block;
 }
-#header .logo-scrolled  {
+#logo .logo-scrolled  {
   display: none;
 }
-#header .header-not-top .logo-scrolled {
+#logo .header-not-top .logo-scrolled {
   display: inline-block;
 }
-#header .header-not-top .logo-top {
+#logo .header-not-top .logo-top {
   display: none;
 }
 
