@@ -377,12 +377,41 @@ a {
 # Profil
 --------------------------------------------------------------*/
 
-.card-soft {
-  background: var(--light-bg);
-  border-radius: var(--card-radius);
-  border: none;
-  padding: 1.5rem;
-  height: 100%;
+/* Styles par défaut = mobile first */
+.profile-box {
+  background: #bfbfbf;
+  border-radius: 20px;
+  padding: 1.5rem;      /* simple padding sur mobile */
+}
+
+/* image au-dessus, centrée */
+.profile-img {
+  display: block;
+  width: 180px;
+  max-width: 60%;
+  margin: 0 auto 1rem;  /* centrée + espace sous l'image */
+  border-radius: 20px;
+}
+
+/* À partir de "md" (≥ 768px) : on passe au layout avec chevauchement */
+@media (min-width: 768px) {
+  .profile-row {
+    position: relative;
+  }
+
+  .profile-box {
+    min-height: 220px;
+    padding: 30px 30px 30px 220px; /* on laisse la place pour l'image à gauche */
+  }
+
+  .profile-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -50%);
+    margin: 0;         /* plus de marge auto */
+    width: 180px;
+  }
 }
 
 
