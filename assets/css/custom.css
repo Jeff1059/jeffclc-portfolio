@@ -381,6 +381,10 @@ h2 strong{
 # Profil
 --------------------------------------------------------------*/
 
+#profil h3{
+  padding-top: 1rem;
+}
+
 /* Styles par défaut = mobile first */
 .profile-box {
   background: #bfbfbf;
