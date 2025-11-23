@@ -391,7 +391,7 @@ h2 strong{
 /* image au-dessus, centrée */
 .profile-img {
   display: block;
-  max-width: 60%;
+  max-width: 35%;
   margin: 0 auto 1rem;  /* centrée + espace sous l'image */
   border-radius: 20px;
 }
