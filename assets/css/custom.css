@@ -391,10 +391,8 @@ h2 strong{
 /* image au-dessus, centrée */
 .profile-img {
   display: block;
-  width: 180px;
   max-width: 60%;
   margin: 0 auto 1rem;  /* centrée + espace sous l'image */
-  border-radius: 20px;
 }
 
 /* À partir de "md" (≥ 768px) : on passe au layout avec chevauchement */
