@@ -421,6 +421,58 @@ h2 strong{
   }
 }
 
+/*--------------------------------------------------------------
+# Competences
+--------------------------------------------------------------*/
+
+    section {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 1.8rem;
+      color: var(--text-dark);
+    }
+
+    .card-soft {
+      background: var(--light-bg);
+      border-radius: var(--card-radius);
+      border: none;
+      padding: 1.5rem;
+      height: 100%;
+    }
+
+    .card-soft.sm {
+      padding: 1.1rem 1.3rem;
+    }
+
+    .pill-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: .55rem 1.35rem;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      font-size: .9rem;
+      margin-right: .4rem;
+      margin-bottom: .4rem;
+    }
+
+    .skill-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #d0c8c7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: .7rem;
+      font-size: 1.3rem;
+    }
+
 
 /*--------------------------------------------------------------
 # Global Footer
