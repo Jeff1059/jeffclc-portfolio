@@ -127,6 +127,24 @@ h2 strong{
   background-position: right bottom;
 }
 
+.main-button a {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--default-color);
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 25px;
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.main-button a:hover {
+  background-color: var(--default-color);
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding-top: 10px;
