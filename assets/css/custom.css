@@ -494,6 +494,7 @@ h2 strong{
   flex-direction: column; 
   flex: 1;   
   justify-content: space-between;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .competence .competence-item h4 {
