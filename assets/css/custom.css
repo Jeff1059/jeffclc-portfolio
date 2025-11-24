@@ -443,6 +443,10 @@ h2 strong{
 # Competences
 --------------------------------------------------------------*/
 
+.competence {
+  display: flex;
+}
+
 .competence .competence-item:hover .icon img {
   margin-top: -10px;
 }
@@ -450,6 +454,9 @@ h2 strong{
 .competence-item {
   position: relative;
   margin-top: 90px;
+  display: flex;        
+  flex-direction: column;     
+  height: 100%; 
 }
 
 .competence .competence-item .icon {
@@ -476,7 +483,6 @@ h2 strong{
   padding: 80px 30px 50px 30px;
   background-color: #f1f0fe;
   margin-bottom: 30px;
-  margin-right: 80px;
   transition: all .4s;
 }
 
@@ -491,17 +497,6 @@ h2 strong{
 .competence .competence-item p {
   color: var(--default-color);
   margin-bottom: 25px;
-}
-
-.skill-icon {
-  width: 80px;
-  height: 80px;
-  font-size: 0.9rem;
-}
-
-.skill-card {
-  background-color: #c4c4c4;
-  min-height: 180px;
 }
 
 .tech-pill {
