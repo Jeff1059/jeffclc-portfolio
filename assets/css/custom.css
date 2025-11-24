@@ -462,7 +462,7 @@ h2 strong{
   margin-top: 90px;
   display: flex;        
   flex-direction: column;     
-  height: 100%; 
+  height: 85%; 
 }
 
 .competence .competence-item .icon {
@@ -493,6 +493,7 @@ h2 strong{
   display: flex;              
   flex-direction: column; 
   flex: 1;   
+  justify-content: space-between;
 }
 
 .competence .competence-item h4 {
