@@ -127,6 +127,12 @@ h2 strong{
   background-position: right bottom;
 }
 
+.background-site{
+  background-image: url(https://jeff1059.github.io/jeffclc-portfolio/assets/images/bg-site.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-button a {
   display: inline-block;
   background-color: #fff;
@@ -469,7 +475,7 @@ h2 strong{
   border-radius: 50%;
   position: absolute;
   right: 0;
-  top: -80px;
+  top: -80px;   
 }
 
 .competence .competence-item .icon img {
@@ -484,6 +490,9 @@ h2 strong{
   background-color: #f1f0fe;
   margin-bottom: 30px;
   transition: all .4s;
+  display: flex;              
+  flex-direction: column; 
+  flex: 1;   
 }
 
 .competence .competence-item h4 {
@@ -497,6 +506,10 @@ h2 strong{
 .competence .competence-item p {
   color: var(--default-color);
   margin-bottom: 25px;
+}
+
+.competence .competence-item .main-button {
+  margin-top: auto;
 }
 
 .tech-pill {
