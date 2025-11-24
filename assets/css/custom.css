@@ -127,12 +127,6 @@ h2 strong{
   background-position: right bottom;
 }
 
-.background-site{
-  background-image: url(https://jeff1059.github.io/jeffclc-portfolio/assets/images/bg-site.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .main-button a {
   display: inline-block;
   background-color: #fff;
