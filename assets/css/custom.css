@@ -453,8 +453,8 @@ h2 strong{
 }
 
 .competence .competence-item .icon {
-  width: 190px;
-  height: 190px;
+  width: 120px;
+  height: 120px;
   display: inline-block;
   text-align: center;
   line-height: 190px;
@@ -462,12 +462,13 @@ h2 strong{
   border-radius: 50%;
   position: absolute;
   right: 0;
-  top: -95px;
+  top: -80px;
 }
 
 .competence .competence-item .icon img {
-  max-width: 86px;
+  max-width: 70%;
   transition: all .2s;
+  vertical-align: text-bottom;
 }
 
 .competence .competence-item .main-content {
