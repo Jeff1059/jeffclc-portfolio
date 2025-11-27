@@ -79,7 +79,7 @@ h2 strong{
 # Global Header
 --------------------------------------------------------------*/
  .header {
-  color: var(--default-color);
+  color: var(--contrast-color);
   transition: all 0.5s;
   z-index: 997;
 }
