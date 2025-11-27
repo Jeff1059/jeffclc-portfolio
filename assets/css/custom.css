@@ -601,6 +601,47 @@ h2 strong{
   }
 }
 
+/*--------------------------------------------------------------
+# Realisations
+--------------------------------------------------------------*/
+
+.testimonial-avatar-wrapper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e5f7fb; /* fond léger si image transparente */
+}
+
+.testimonial-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Nom */
+.testimonial-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* Bulle de témoignage */
+.testimonial-bubble {
+  background-color: #e9f7f8;   /* bleu très clair comme sur ta maquette */
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  min-height: 70px;
+  max-width: 260px;
+  font-size: 0.9rem;
+}
+
+/* Un peu de resp. si besoin */
+@media (max-width: 575.98px) {
+  .testimonial-main-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
