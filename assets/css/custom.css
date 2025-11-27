@@ -528,7 +528,7 @@ h2 strong{
 }
 
 /*--------------------------------------------------------------
-# Competences
+# Realisations
 --------------------------------------------------------------*/
 
 /* Juste pour la maquette grise à gauche */
@@ -566,7 +566,7 @@ h2 strong{
 
 /* slide active, large */
 .slide.active {
-  flex-basis: 100%;          /* elle prend le max possible */
+  flex: 3 1 0;
 }
 
 /* contenu texte */
