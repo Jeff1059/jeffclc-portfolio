@@ -535,17 +535,19 @@ h2 strong{
 .placeholder-card {
   background: #c9c9c9;
   border-radius: 20px;
-  height: 220px;
+  height: 100%;
 }
 
-/* Conteneur du slider */
 .slider-extended {
   display: flex;
   gap: 1rem;
-  height: 260px;              /* adapte selon ton design */
+  height: 260px;
+  /* sécurité au cas où */
+  max-width: 100%;
+  overflow: hidden;
 }
 
-/* Slide générale */
+/* chaque slide prend 1 part de l’espace */
 .slide {
   position: relative;
   background: #c9c9c9;
@@ -556,18 +558,17 @@ h2 strong{
   align-items: flex-end;
   padding: 1.5rem;
   transition:
-    flex-basis 0.4s ease,
+    flex 0.4s ease,
     transform 0.4s ease,
     box-shadow 0.4s ease;
-  
-  /* largeur par défaut (slide “rétractée”) */
-  flex: 0 0 80px;
+  flex: 1 1 0;
 }
 
-/* slide active, large */
+/* la slide active en prend 3 parts */
 .slide.active {
   flex: 3 1 0;
 }
+
 
 /* contenu texte */
 .slide-content {
