@@ -531,21 +531,18 @@ h2 strong{
 # Realisations
 --------------------------------------------------------------*/
 
-/* Juste pour la maquette grise à gauche */
 .placeholder-card {
   background: #c9c9c9;
   border-radius: 20px;
   height: 220px;
 }
 
-/* Conteneur du slider */
 .slider-extended {
   display: flex;
   gap: 1rem;
-  height: 100%;              /* adapte selon ton design */
+  height: 100%; 
 }
 
-/* Slide générale */
 .slide {
   position: relative;
   background: #c9c9c9;
@@ -559,29 +556,24 @@ h2 strong{
     flex-basis 0.4s ease,
     transform 0.4s ease,
     box-shadow 0.4s ease;
-  
-  /* largeur par défaut (slide “rétractée”) */
   flex: 0 0 80px;
 }
 
-/* slide active, large */
 .slide.active {
   flex: 3 1 0;
 }
 
-/* contenu texte */
 .slide-content {
   opacity: 0;
   transition: opacity 0.3s ease;
   max-width: 100%;
 }
 
-/* on affiche le texte seulement sur l’active */
 .slide.active .slide-content {
   opacity: 1;
 }
 
-/* numéro en bas à droite */
+
 .slide-number {
   position: absolute;
   right: 15px;
@@ -597,7 +589,7 @@ h2 strong{
   font-weight: 600;
 }
 
-/* Responsive : empilement sur mobile */
+
 @media (max-width: 767.98px) {
   .slider-extended {
     flex-direction: column;
