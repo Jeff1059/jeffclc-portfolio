@@ -42,20 +42,23 @@ document.addEventListener('DOMContentLoaded', function () {
    * ============================ */
   const headerText = document.querySelector('.header-text');
   const mainHeader = document.querySelector('header');
+  const navHeader = document.querySelector('header-container');
 
   function toggleBackgroundHeader() {
-    if (!headerText || !mainHeader) return;
+    if (!headerText || !mainHeader || !navHeader) return;
 
     const scroll = window.scrollY;
     const boxHeight = headerText.offsetHeight;
     const headerHeight = mainHeader.offsetHeight;
 
-    if (scroll >= boxHeight - headerHeight) {
-      mainHeader.classList.add('background-header');
-    } else {
-      mainHeader.classList.remove('background-header');
-    }
+  if (scroll >= boxHeight - headerHeight) {
+    mainHeader.classList.add('background-header');
+    navHeader.classList.remove('header-container'); // <-- suppression
+  } else {
+    mainHeader.classList.remove('background-header');
+    navHeader.classList.add('header-container'); // <-- remise
   }
+}
 
   window.addEventListener('scroll', toggleBackgroundHeader);
   window.addEventListener('load', toggleBackgroundHeader);
