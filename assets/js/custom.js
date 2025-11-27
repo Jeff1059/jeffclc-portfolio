@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
    * ============================ */
   const headerText = document.querySelector('.header-text');
   const mainHeader = document.querySelector('header');
-  const navHeader = document.querySelector('header-container');
+  const navHeader = document.querySelector('.header-container');
 
   function toggleBackgroundHeader() {
     if (!headerText || !mainHeader || !navHeader) return;
