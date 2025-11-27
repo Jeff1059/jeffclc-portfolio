@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const navHeader = document.querySelector('.header-container');
 
   function toggleBackgroundHeader() {
-    if (!headerText || !mainHeader || !navHeader) return;
+    if (!headerText || !mainHeader) return;
 
     const scroll = window.scrollY;
     const boxHeight = headerText.offsetHeight;
