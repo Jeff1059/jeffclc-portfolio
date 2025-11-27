@@ -177,7 +177,61 @@
     </div> <!-- /.row -->
   </div> <!-- /.container -->
 </section>
+
  <!--Competences Section-->
+
+ <!--Réalisation Section-->
+
+<section class="py-5">
+  <div class="container">
+    <h2>Mes <strong>réalisations</strong></h2>
+
+    <div class="row">
+      <!-- Bloc de gauche fixe -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h3 class="h5 fw-bold">Manou partages</h3>
+        <a href="#">Lien</a>
+        <div class="card mt-3 placeholder-card"></div>
+      </div>
+
+      <!-- Slider animé -->
+      <div class="col-lg-8">
+        <div class="slider-extended">
+          <article class="slide active">
+            <div class="slide-content">
+              <h3>Wordpress, Made Simple</h3>
+              <p>Slide 1 – contenu détaillé.</p>
+            </div>
+            <span class="slide-number">1</span>
+          </article>
+
+          <article class="slide">
+            <div class="slide-content">
+              <h3>Projet 2</h3>
+              <p>Slide 2 – autre contenu.</p>
+            </div>
+            <span class="slide-number">2</span>
+          </article>
+
+          <article class="slide">
+            <div class="slide-content">
+              <h3>Projet 3</h3>
+              <p>Slide 3 – encore un exemple.</p>
+            </div>
+            <span class="slide-number">3</span>
+          </article>
+        </div>
+
+        <p class="text-center mt-2 small text-muted">Slider animé</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!--Réalisation Section-->
+
+
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -206,6 +260,21 @@
     window.addEventListener("scroll", checkScroll);
     window.addEventListener("load", checkScroll);
     checkScroll();
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slider-extended .slide');
+
+    slides.forEach(slide => {
+      slide.addEventListener('click', () => {
+        const active = document.querySelector('.slider-extended .slide.active');
+        if (active) {
+          active.classList.remove('active');
+        }
+        slide.classList.add('active');
+      });
+    });
   });
 </script>
 

@@ -527,6 +527,89 @@ h2 strong{
   padding: 10px;
 }
 
+/*--------------------------------------------------------------
+# Competences
+--------------------------------------------------------------*/
+
+/* Juste pour la maquette grise à gauche */
+.placeholder-card {
+  background: #c9c9c9;
+  border-radius: 20px;
+  height: 220px;
+}
+
+/* Conteneur du slider */
+.slider-extended {
+  display: flex;
+  gap: 1rem;
+  height: 260px;              /* adapte selon ton design */
+}
+
+/* Slide générale */
+.slide {
+  position: relative;
+  background: #c9c9c9;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  transition:
+    flex-basis 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  
+  /* largeur par défaut (slide “rétractée”) */
+  flex: 0 0 80px;
+}
+
+/* slide active, large */
+.slide.active {
+  flex-basis: 100%;          /* elle prend le max possible */
+}
+
+/* contenu texte */
+.slide-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-width: 100%;
+}
+
+/* on affiche le texte seulement sur l’active */
+.slide.active .slide-content {
+  opacity: 1;
+}
+
+/* numéro en bas à droite */
+.slide-number {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #3e1c1a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Responsive : empilement sur mobile */
+@media (max-width: 767.98px) {
+  .slider-extended {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .slide,
+  .slide.active {
+    flex: 1 1 auto;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
