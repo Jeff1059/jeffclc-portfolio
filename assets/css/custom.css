@@ -542,7 +542,7 @@ h2 strong{
 .slider-extended {
   display: flex;
   gap: 1rem;
-  height: 260px;              /* adapte selon ton design */
+  height: 100%;              /* adapte selon ton design */
 }
 
 /* Slide générale */
