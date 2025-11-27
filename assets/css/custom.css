@@ -418,7 +418,8 @@ h2 strong{
 .profile-box {
   background: var(--surface-color);
   border-radius: 20px;
-  padding: 1.5rem;      /* simple padding sur mobile */
+  padding: 1.5rem;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* image au-dessus, centrée */
@@ -524,6 +525,7 @@ h2 strong{
   border-radius: 50px;
   text-align: center;
   padding: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*--------------------------------------------------------------
@@ -551,6 +553,7 @@ h2 strong{
   display: flex;
   align-items: flex-end;
   padding: 1.5rem;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
   transition:
     flex-basis 0.4s ease,
     transform 0.4s ease,
