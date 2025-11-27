@@ -101,6 +101,8 @@ h2 strong{
 
 .background-header{
   background-color: var(--contrast-color);
+  border-radius: 0px 0px 50px 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 #header .logo-top {
