@@ -10,7 +10,7 @@
   --default-color: #402729; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #5f687b; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #b25531; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #c5c5ca; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --light-bg: #f7f7f7;
   --chip-bg: #ded7d5;
@@ -417,7 +417,7 @@ h2 strong{
 
 /* Styles par défaut = mobile first */
 .profile-box {
-  background: #bfbfbf;
+  background: var(--surface-color);
   border-radius: 20px;
   padding: 1.5rem;      /* simple padding sur mobile */
 }
@@ -493,7 +493,7 @@ h2 strong{
 .competence .competence-item .main-content {
   border-radius: 25px;
   padding: 80px 30px 50px 30px;
-  background-color: #f1f0fe;
+  background-color: var(--surface-color);
   margin-bottom: 30px;
   transition: all .4s;
   display: flex;              
