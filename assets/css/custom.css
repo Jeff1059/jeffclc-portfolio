@@ -99,6 +99,10 @@ h2 strong{
   margin-right: 8px;
 }
 
+.background-header{
+  background-color: var(--contrast-color);
+}
+
 #header .logo-top {
   display: inline-block;
 }
