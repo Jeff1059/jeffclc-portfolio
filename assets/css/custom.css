@@ -96,7 +96,7 @@ h2 strong{
 }
 .header .logo img {
   max-height: 75px;
-  margin: 10px 8px 10px;
+  margin: 10px 8px 10px 0px;
 }
 
 .background-header{
