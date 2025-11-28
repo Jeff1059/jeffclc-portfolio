@@ -135,7 +135,7 @@ h2 strong{
 
 .btn-getstarted:hover, .btn-getstarted:focus:hover {
   color: var(--accent-color);
-  background: color-mix(in srgb, var(--contrast-color), transparent 15%);
+  background: var(--contrast-color)
 }
 
 .background-home{
