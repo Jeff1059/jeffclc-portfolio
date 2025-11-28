@@ -123,7 +123,7 @@ h2 strong{
 }
 
 
-.btn-getstarted a, .btn-getstarted a:focus {
+.btn-getstarted, .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 14px;
@@ -133,9 +133,9 @@ h2 strong{
   transition: 0.3s;
 }
 
-.btn-getstarted a:hover, a.btn-getstarted:focus a:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+.btn-getstarted:hover, .btn-getstarted:focus:hover {
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--contrast-color), transparent 15%);
 }
 
 .background-home{
