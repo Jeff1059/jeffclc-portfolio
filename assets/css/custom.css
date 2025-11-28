@@ -124,7 +124,7 @@ h2 strong{
 
 
 .btn-getstarted, .btn-getstarted:focus {
-  color: var(--contrast-color);
+  color: var(--contrast-color) !important;
   background: var(--accent-color);
   font-size: 14px;
   padding: 8px 20px;
@@ -134,7 +134,7 @@ h2 strong{
 }
 
 .btn-getstarted:hover, .btn-getstarted:focus:hover {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
   background: var(--contrast-color)
 }
 
@@ -1245,7 +1245,7 @@ section,
 }
 
 .btn-get-started {
-  color: var(--contrast-color);
+  color: var(--contrast-color) !important;
   background: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 400;
@@ -1259,7 +1259,7 @@ section,
 }
 
 .btn-get-started:hover {
-  color: var(--contrast-color);
+  color: var(--contrast-color) !important;
   background: var(--default-color);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
